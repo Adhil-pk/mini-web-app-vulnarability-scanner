@@ -1,0 +1,37 @@
+mkdir webapp-vuln-scanner
+cd webapp-vuln-scanner
+
+# Create files with heredocs (paste each block as one command)
+cat > scanner.py <<'EOF'
+[PASTE scanner.py CONTENT HERE]
+EOF
+
+# If you already have app.py, skip recreating it. Otherwise create it.
+cat > requirements.txt <<'EOF'
+Flask==2.3.3
+requests==2.31.0
+beautifulsoup4==4.12.2
+pytest==7.4.0
+EOF
+
+cat > README.md <<'EOF'
+[PASTE README.md CONTENT HERE]
+EOF
+
+cat > .gitignore <<'EOF'
+[PASTE .gitignore CONTENT HERE]
+EOF
+
+mkdir -p docs tests .github/workflows
+
+cat > docs/architecture.md <<'EOF'
+[PASTE docs content here]
+EOF
+
+cat > tests/test_scanner_basic.py <<'EOF'
+[PASTE test file content here]
+EOF
+
+cat > .github/workflows/ci.yml <<'EOF'
+[PASTE ci.yml content here]
+EOF
