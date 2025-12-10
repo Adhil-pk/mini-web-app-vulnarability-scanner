@@ -1,0 +1,11 @@
+git 
+---
+
+# 6) `docs/architecture.md`
+```md
+# Architecture (mini)
+
+- `app.py` uses `scanner.SimpleScanner` to run scans (spawned in a background thread in the example).
+- `scanner.py` performs crawling, form extraction, and safe marker-based testing.
+- Findings are logged to an SQLite DB by the `Logger` class.
+- Additions: authentication handling, headless browser support (Selenium/Playwright), and extra heuristics can be added iteratively.
