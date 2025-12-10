@@ -1,0 +1,4 @@
+cd /path/to/webapp-vuln-scanner
+git init
+git add .
+git commit -m "Initial commit: simple marker-based webapp vuln scanner"
